@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>979818646327-mm325tsc1tg6ni2hu9e070gp8dsdt7qn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.979818646327-mm325tsc1tg6ni2hu9e070gp8dsdt7qn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA16QZARkXlHxmHYh3RgmAOWbj5EJSEBx4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>979818646327</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pk.aiza.app</string>
+	<key>PROJECT_ID</key>
+	<string>aiza-9788c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aiza-9788c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:979818646327:ios:094de29f5787aa4c</string>
+	<key>DATABASE_URL</key>
+	<string>https://aiza-9788c.firebaseio.com</string>
+</dict>
+</plist>

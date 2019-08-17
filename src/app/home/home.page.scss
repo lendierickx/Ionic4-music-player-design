@@ -1,0 +1,220 @@
+:host {  
+  ion-content {
+    // color: whitesmoke;
+    // --background: url("/assets/background.png") no-repeat 0 0/100% 100%;
+    --background: #131b26;
+    // font-family: 'Sanseriffic Bold';
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
+
+    #canvas {
+      position: absolute;
+      left: 0;
+    }
+
+    .topbar {
+      padding-top: 15px;
+      padding-right: 16px;
+      padding-left: 16px;
+
+      display: flex;
+      color: whitesmoke;
+      width: 100%;
+      .fill-remainig-space {
+        flex: 1
+      }
+    }
+
+    .lights {
+      position: absolute;
+      width: 90%;
+      height: 95px;
+      background: url("/assets/lights.png");
+      top: 100px;
+      left: 5%;
+    }
+
+    .playing {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .controls {
+      position: absolute;
+      background: url("/assets/controls.png");
+      background-size: cover;
+      width: 408px;
+      height: 295px;
+      top: calc(50vh - 185px);
+      left: calc(50% - 204px);
+      display: none;
+
+      .play {
+        position: absolute;
+        color: #0ac500;
+        left: calc(50% - 26px);
+        width: 67px;
+        top: 135px;
+      }
+      .pause {
+        position: absolute;
+        color: #c50a00;
+        left: calc(50% - 26px);
+        width: 67px;
+        top: 135px;
+      }
+
+      .station {
+        font-weight: normal;
+        font-size: 22px;
+        color: #1e2023;
+      }
+      .station.active {
+        font-weight: bolder;
+      }
+
+      .station.Party {
+        position: absolute;
+        left: 45%;
+        top: 56px;
+      }
+
+      .station.Folk {
+        position: absolute;
+        left: 68%;
+        top: 150px;
+        transform: rotate(90deg);
+      }
+      .station.Classic {
+        position: absolute;
+        left: 18%;
+        top: 148px;
+        transform: rotate(270deg);
+      }
+      .station.Romantic {
+        position: absolute;
+        left: 39%;
+        top: 241px;
+      }
+
+    }
+
+    .logo-inner {
+      position: absolute;
+      bottom: 46px;
+      height: 64px;
+      width: 118px;
+      left: calc(50% - 59px);
+      background: url("/assets/aiza-logo-inner.png");
+    }
+
+    ion-col {
+      button {
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+
+        ion-icon {
+          font-size: 30px;
+        }
+
+        img {
+          width: 30%;
+        }
+      }      
+    }
+
+    .music_kind {
+      margin-top: 3%;//13
+      position: relative;
+      ion-col {
+        .music {
+          color: white;
+          font-size: 15px;                  
+        }
+        .music.active {
+          font-weight: bolder;
+          background: url("/assets/imgs/play_button.png");
+          background-size: cover;
+          width: 100px;
+          height: 85px;
+          padding-top: 34%;
+        }        
+      }
+    }
+
+    .logo-image {
+      // margin-top: 15%;
+      // background: url("/assets/imgs/aiza01.svg");
+      // width: 100%;
+      // height: 60%;
+      // background-size: cover;
+
+      .effect_svg {
+
+      }
+
+      .svg {
+        position: absolute;
+        top: 8%;
+        left: 13%;
+      }
+    }
+    .bottom_setting {
+      margin-top: 1%;//5
+      img {
+        width: 8%;
+      }
+    }
+
+    .red-circle {
+      .logo {
+        width: 55%;
+        margin-top: 23%;
+      }
+    }
+
+    .title {
+      color: white;
+      font-size: 22px;
+      margin-top: 5%;
+    }
+
+    .music-subject {
+      color: white;
+      font-size: 18px;
+      margin-top: 3%;
+    }
+
+    .toolbar {
+      margin-top: 3%;//10
+      position: relative;
+    }
+
+    .progress {
+      margin-top: 4%;//13
+      color: white;      
+    }
+
+    .progress-buffer-bar, .progress-buffer-bar:before, .indeterminate-bar-secondary, .progress-indeterminate {
+      background: #7d7e7f !important;
+    }
+
+    .pro-bar {
+      background: #7d7e7f !important;
+    }
+
+    .manager {
+      font-size: 13px;
+      color: #ff3181;
+      margin-top: 7px;
+      margin-bottom: 0px;
+    }    
+  }
+}

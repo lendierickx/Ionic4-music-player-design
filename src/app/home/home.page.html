@@ -1,0 +1,142 @@
+<ion-content>
+    <!-- <audio #audioOption style="display: none;" id="audio" crossorigin="anonymous">
+    </audio> -->
+    <div [class]="lightsClass()" style="z-index: 1">
+        <!-- <div class="topbar">
+            <ion-icon name="menu" size="large" (click)="gotoAbout()"></ion-icon>
+            <span class="fill-remainig-space"></span>
+            <ion-icon name="share" size="large" (click)="share()"></ion-icon>
+        </div> -->
+        <canvas #spectrum_canvas></canvas>
+        <canvas id="glow-layer"></canvas>
+    </div>
+
+    <div class="logo-image" text-center>
+        <!-- <div class="effect_svg">
+            <img src="assets/imgs/aiza01.svg" class="svg">
+        </div> -->
+        
+        <div class="red-circle">
+            <img #pink_circle src="assets/imgs/aiza_circle_logo.png" class="logo">
+        </div>        
+    </div>
+
+    <div text-center>
+        <div class="title">Let the Music Speak</div>        
+    </div>
+
+    <ion-row justify-content-center class="toolbar" style="z-index: 100">
+        <ion-col align-self-center align-items-center>
+            <button ion-button outline icon-only color="transparent">                
+                <img src="assets/imgs/button1.png">
+            </button>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <button ion-button outline icon-only>                
+                <img src="assets/imgs/button2.png">
+            </button>
+        </ion-col>
+        <ion-col align-self-center align-items-center *ngIf="isPlaying">
+            <button ion-button outline icon-only (click)="pause()">
+                <ion-icon style="font-size: 18px" name="pause"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col align-self-center align-items-center *ngIf="!isPlaying">
+            <button ion-button outline icon-only (click)="play()">                
+                <img *ngIf="!isPlaying" src="assets/imgs/play.png">
+            </button>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <button ion-button outline icon-only>                
+                <img src="assets/imgs/button3.png">
+            </button>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <button ion-button outline icon-only>                
+                <img src="assets/imgs/button4.png">
+            </button>
+        </ion-col>
+    </ion-row>    
+    <!-- (click)="play()" -->
+    <ion-row class="progress">
+        <ion-col size="2" align-self-center align-items-center text-center>
+            {{secondFormat ? secondFormat : '0:00'}}
+        </ion-col>
+
+        <ion-col size="8" align-self-center align-items-center text-center>
+            <ion-progress-bar class="pro-bar" color="danger" [value]="currentTime / 1000"></ion-progress-bar>            
+        </ion-col>
+
+        <ion-col size="2" align-self-center align-items-center text-center>
+            12:05
+        </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center class="music_kind" style="z-index: 100">
+        <ion-col align-self-center align-items-center>
+            <div text-center [class]="getMusicClassName(musicKind[0])" (click)="choose(musicKind[0])">                
+                {{musicKind[0]}}
+            </div>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <div text-center [class]="getMusicClassName(musicKind[1])" (click)="choose(musicKind[1])">
+                {{musicKind[1]}}
+            </div>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <div text-center [class]="getMusicClassName(musicKind[2])" (click)="choose(musicKind[2])">
+                {{musicKind[2]}}
+            </div>
+        </ion-col>
+        <ion-col align-self-center align-items-center>
+            <div text-center [class]="getMusicClassName(musicKind[3])" (click)="choose(musicKind[3])">                
+                {{musicKind[3]}}
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <div class="bottom_setting" text-center>
+        <img src="assets/imgs/settings.png">
+
+        <p class="manager">Project by Sunny</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="controls" style="z-index: 100">
+        <div [class]="getControlClass('Party')" (click)="choose('Party')">
+            Party
+        </div>
+        <div [class]="getControlClass('Folk')" (click)="choose('Folk')">
+            Folk
+        </div>
+        <div [class]="getControlClass('Romantic')" (click)="choose('Romantic')">
+            Romantic
+        </div>
+        <div [class]="getControlClass('Classic')" (click)="choose('Classic')">
+            Classic
+        </div>
+        <div class="play" *ngIf="!isPlaying" (click)="play()" id="btn-play">
+            <ion-icon name="play" style="zoom:4.0;"></ion-icon>
+        </div>
+        <div class="pause" *ngIf="isPlaying" (click)="pause()">
+            <ion-icon name="pause" style="zoom:4.0;"></ion-icon>
+        </div>
+    </div>
+
+    <!-- <div class="logo-inner"></div> -->
+
+    <script>
+        console.log("asdfsadf");
+            </script>
+
+
+</ion-content>

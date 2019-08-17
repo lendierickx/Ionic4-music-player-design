@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "979818646327",
+    "firebase_url": "https://aiza-9788c.firebaseio.com",
+    "project_id": "aiza-9788c",
+    "storage_bucket": "aiza-9788c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979818646327:android:094de29f5787aa4c",
+        "android_client_info": {
+          "package_name": "pk.aiza.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979818646327-dbkr0k82g5om5lv84bv8d1mpkgfapgog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFuG4zBAAslREJGa-_v0MjnrCB4TfRlwo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
